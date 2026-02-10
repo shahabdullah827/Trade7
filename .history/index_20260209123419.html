@@ -1,0 +1,327 @@
+﻿---
+
+title: Trade Group 7
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Proprietary algorithmic trading software for alternative assets">
+    <title>Trade Group 7</title>
+    <style>
+        /* Base Styles */
+        :root {
+            --bg-primary: #0a0a0a;
+            --bg-secondary: #111111;
+            --text-primary: #ffffff;
+            --text-secondary: #a1a1aa;
+            --accent: #3b82f6;
+            --border: #27272a;
+            --success: #10b981;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        html, body {
+            height: 100%;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.6;
+        }
+        
+        .container {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+        
+        /* Header */
+        .site-header {
+            padding: 4rem 0 3rem;
+        }
+        
+        .logo {
+            font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+            font-size: 3.5rem;
+            font-weight: 600;
+            letter-spacing: -0.02em;
+        }
+        
+        .logo-trade {
+            color: var(--text-primary);
+        }
+        
+        .logo-group {
+            color: var(--text-secondary);
+        }
+        
+        .logo-number {
+            color: var(--accent);
+        }
+        
+        /* Main Content */
+        .main-content {
+            flex: 1;
+            padding: 2rem 0;
+        }
+        
+        .tagline {
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.4;
+            max-width: 800px;
+        }
+        
+        .divider {
+            width: 60px;
+            height: 1px;
+            background: linear-gradient(90deg, var(--accent), transparent);
+            margin: 2.5rem 0;
+        }
+        
+        .description {
+            font-size: 1.125rem;
+            color: var(--text-primary);
+            max-width: 600px;
+        }
+        
+        .description p {
+            margin-bottom: 1rem;
+        }
+        
+        /* Contact Section */
+        .contact h2 {
+            font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+            font-size: 1.25rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+            margin-bottom: 1.5rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+        }
+        
+        .contact-content {
+            max-width: 600px;
+        }
+        
+        .contact-note {
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+            font-size: 1rem;
+        }
+        
+        .email-container {
+            display: inline-block;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            padding: 0.75rem 1.5rem;
+            transition: all 0.2s ease;
+        }
+        
+        .email-container:hover {
+            border-color: var(--accent);
+            transform: translateY(-2px);
+        }
+        
+        .email-link {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            text-decoration: none;
+            color: var(--text-primary);
+            font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+            font-size: 1.125rem;
+        }
+        
+        .email-link:hover {
+            color: var(--accent);
+        }
+        
+        .email-link svg {
+            color: var(--text-secondary);
+        }
+        
+        /* Footer */
+        .site-footer {
+            padding: 3rem 0;
+            margin-top: auto;
+        }
+        
+        .footer-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+        }
+        
+        .copyright {
+            color: var(--text-secondary);
+            font-size: 0.875rem;
+        }
+        
+        .status-indicator {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            background: var(--bg-secondary);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            border: 1px solid var(--border);
+        }
+        
+        .status-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--success);
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% {
+                opacity: 1;
+            }
+            50% {
+                opacity: 0.5;
+            }
+        }
+        
+        .status-text {
+            font-family: 'Menlo', 'Monaco', 'Courier New', monospace;
+            font-size: 0.75rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.05em;
+        }
+        
+        /* Responsive */
+        @media (max-width: 768px) {
+            .container {
+                padding: 0 1.5rem;
+            }
+            
+            .logo {
+                font-size: 2.5rem;
+            }
+            
+            .tagline {
+                font-size: 1.25rem;
+            }
+            
+            .description {
+                font-size: 1rem;
+            }
+            
+            .footer-content {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 1rem;
+            }
+            
+            .site-header {
+                padding: 3rem 0 2rem;
+            }
+        }
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                font-size: 2rem;
+            }
+            
+            .email-link {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="site-header">
+            <div class="header-content">
+                <div class="logo">
+                    <span class="logo-trade">Trade</span>
+                    <span class="logo-group">Group</span>
+                    <span class="logo-number">7</span>
+                </div>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <section class="hero">
+                <div class="hero-content">
+                    <p class="tagline">Proprietary algorithmic trading software for alternative assets</p>
+                    <div class="divider"></div>
+                    <div class="description">
+                        <p>Trade Group 7 develops proprietary software for the algorithmic trading of alternative assets.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact">
+                <h2>Contact</h2>
+                <div class="contact-content">
+                    <p class="contact-note">For operational correspondence  we do not routinely respond to requests for media interviews or public commentary.</p>
+                    <div class="email-container">
+                        <a href="mailto:contact@tradegroup7.com" class="email-link">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                                <polyline points="22,6 12,13 2,6"></polyline>
+                            </svg>
+                            <span>contact@tradegroup7.com</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="site-footer">
+            <div class="footer-content">
+                <p class="copyright">&copy; 2024 Trade Group 7. All rights reserved.</p>
+                <div class="status-indicator">
+                    <span class="status-dot"></span>
+                    <span class="status-text">Operational</span>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Update status indicator based on time
+        document.addEventListener('DOMContentLoaded', function() {
+            const statusDot = document.querySelector('.status-dot');
+            const statusText = document.querySelector('.status-text');
+            
+            // Simulate market hours (6 AM to 8 PM UTC)
+            const now = new Date();
+            const hours = now.getUTCHours();
+            const isMarketHours = hours >= 6 && hours < 20;
+            
+            if (isMarketHours) {
+                statusDot.style.backgroundColor = '#10b981';
+                statusText.textContent = 'Active Trading';
+            } else {
+                statusDot.style.backgroundColor = '#6b7280';
+                statusText.textContent = 'Monitoring';
+            }
+        });
+    </script>
+</body>
+</html>

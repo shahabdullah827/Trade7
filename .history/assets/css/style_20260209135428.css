@@ -1,0 +1,353 @@
+﻿/* Trade Group 7 - Exact Figma Implementation */
+
+/* Variables */
+:root {
+    --bg-color: #0E0E0E;
+    --text-color: #DADADA;
+    --secondary-text: #A0A0A0;
+    --highlight-color: #2A2A2A;
+    --border-color: #3A3A3A;
+}
+
+/* Reset and Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    width: 100%;
+    min-height: 100vh;
+    font-family: 'EB Garamond', serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Main Container - Exact Figma Dimensions */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 1512px;
+    min-height: 982px;
+    max-width: 100%;
+    padding: 140px 140px 80px 140px;
+    justify-content: space-between;
+    align-items: flex-start;
+    background: var(--bg-color);
+    margin: 0 auto;
+}
+
+/* Header Section */
+.header {
+    width: 100%;
+    margin-bottom: 40px;
+}
+
+/* Logo - EXACT Figma specs */
+.logo {
+    align-self: stretch;
+    height: 120px;
+    color: #DADADA;
+    font-family: "EB Garamond";
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 124%; /* 119.04px */
+    letter-spacing: 0.96px;
+    display: flex;
+    align-items: center;
+}
+
+/* Description Section - EXACT Figma specs */
+.description {
+    align-self: stretch;
+    color: #DADADA;
+    font-family: "EB Garamond";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 64px; /* Fixed line height */
+    letter-spacing: 0px;
+    max-width: 960px;
+    margin-bottom: 40px;
+}
+
+/* Contact Section */
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 100%;
+    max-width: 708px;
+}
+
+/* Contact Title - EXACT Figma specs */
+.contact-title {
+    align-self: stretch;
+    height: 32px;
+    color: #DADADA;
+    font-family: "EB Garamond";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 48px; /* Static/Headline Small/Line Height */
+    letter-spacing: 0px;
+    display: flex;
+    align-items: center;
+}
+
+/* Contact Note - EXACT Figma specs */
+.contact-note {
+    align-self: stretch;
+    height: 31px;
+    color: #A0A0A0;
+    font-family: "EB Garamond";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 135%; /* 32.4px */
+    letter-spacing: 0.24px;
+    display: flex;
+    align-items: center;
+}
+
+/* Email Link - EXACT Figma specs */
+.email-link {
+    align-self: stretch;
+    height: 24px;
+    color: #DADADA;
+    font-family: "EB Garamond";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.email-link:hover {
+    opacity: 0.7;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    margin-top: auto;
+    padding-top: 40px;
+    border-top: 1px solid rgba(218, 218, 218, 0.1);
+}
+
+/* Copyright - EXACT Figma specs */
+.copyright {
+    width: 1232px;
+    height: 18px;
+    color: #A0A0A0;
+    font-family: "EB Garamond";
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100%;
+    letter-spacing: 0px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+/* Responsive Design - Adjusted for EB Garamond */
+@media (max-width: 1600px) {
+    .container {
+        width: 100%;
+        padding: 100px 100px 60px 100px;
+    }
+    
+    .copyright {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1200px) {
+    .container {
+        padding: 80px 80px 50px 80px;
+    }
+    
+    .logo {
+        font-size: 72px;
+        height: 90px;
+        letter-spacing: 0.72px;
+    }
+    
+    .description {
+        font-size: 36px;
+        line-height: 48px;
+    }
+    
+    .contact-title {
+        font-size: 32px;
+        line-height: 38px;
+        height: 28px;
+    }
+    
+    .contact-note {
+        font-size: 20px;
+        line-height: 27px;
+        height: 26px;
+        letter-spacing: 0.20px;
+    }
+    
+    .email-link {
+        font-size: 20px;
+        height: 20px;
+    }
+    
+    .copyright {
+        font-size: 13px;
+        height: 16px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        padding: 60px 60px 40px 60px;
+    }
+    
+    .logo {
+        font-size: 60px;
+        height: 75px;
+        letter-spacing: 0.60px;
+    }
+    
+    .description {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    
+    .contact-title {
+        font-size: 28px;
+        line-height: 34px;
+        height: 26px;
+    }
+    
+    .contact-note {
+        font-size: 18px;
+        line-height: 24px;
+        height: 22px;
+        letter-spacing: 0.18px;
+    }
+    
+    .email-link {
+        font-size: 18px;
+        height: 18px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+        height: 15px;
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        padding: 40px 24px 30px 24px;
+        height: auto;
+    }
+    
+    .logo {
+        font-size: 48px;
+        height: 60px;
+        letter-spacing: 0.48px;
+        justify-content: center;
+        text-align: center;
+    }
+    
+    .description {
+        font-size: 24px;
+        line-height: 32px;
+    }
+    
+    .contact-title {
+        font-size: 24px;
+        line-height: 29px;
+        height: 22px;
+    }
+    
+    .contact-note {
+        font-size: 16px;
+        line-height: 22px;
+        height: 20px;
+        letter-spacing: 0.16px;
+    }
+    
+    .email-link {
+        font-size: 16px;
+        height: 16px;
+    }
+    
+    .copyright {
+        font-size: 12px;
+        height: 14px;
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 32px 20px 24px 20px;
+    }
+    
+    .logo {
+        font-size: 36px;
+        height: 45px;
+        letter-spacing: 0.36px;
+    }
+    
+    .description {
+        font-size: 20px;
+        line-height: 28px;
+    }
+    
+    .contact-title {
+        font-size: 20px;
+        line-height: 24px;
+        height: 20px;
+    }
+    
+    .contact-note {
+        font-size: 14px;
+        line-height: 19px;
+        height: 18px;
+        letter-spacing: 0.14px;
+    }
+    
+    .email-link {
+        font-size: 14px;
+        height: 14px;
+    }
+    
+    .copyright {
+        font-size: 11px;
+        height: 13px;
+    }
+}
+
+/* Utilities */
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Ensure EB Garamond font loads properly */
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap');

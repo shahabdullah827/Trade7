@@ -1,0 +1,100 @@
+﻿---
+layout: null
+title: Page Not Found
+---
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 - Trade Group 7</title>
+    
+    <!-- EB Garamond Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        
+        body {
+            font-family: "EB Garamond", serif;
+            background-color: #000000;
+            color: #DADADA;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+            text-align: center;
+        }
+        
+        .error-container { max-width: 800px; }
+        
+        .logo {
+            font-family: "EB Garamond", serif;
+            font-weight: 500;
+            font-size: 64px;
+            background: #2A2A2A;
+            padding: 16px 32px;
+            margin-bottom: 48px;
+            display: inline-block;
+        }
+        
+        .error-code {
+            font-size: 120px;
+            font-weight: 500;
+            background: #2A2A2A;
+            padding: 16px 32px;
+            margin-bottom: 32px;
+        }
+        
+        .error-message {
+            font-size: 32px;
+            font-weight: 400;
+            line-height: 135%;
+            margin-bottom: 48px;
+            color: #A0A0A0;
+        }
+        
+        .back-link {
+            font-size: 24px;
+            font-weight: 500;
+            color: #DADADA;
+            text-decoration: none;
+            background: #2A2A2A;
+            padding: 12px 24px;
+            display: inline-block;
+        }
+        
+        @media (max-width: 768px) {
+            body { padding: 24px; }
+            .logo { font-size: 48px; margin-bottom: 32px; }
+            .error-code { font-size: 80px; margin-bottom: 24px; }
+            .error-message { font-size: 24px; margin-bottom: 32px; }
+            .back-link { font-size: 20px; }
+        }
+        
+        @media (max-width: 480px) {
+            .logo { font-size: 36px; margin-bottom: 24px; padding: 12px 24px; }
+            .error-code { font-size: 60px; padding: 12px 24px; }
+            .error-message { font-size: 20px; margin-bottom: 24px; }
+            .back-link { font-size: 18px; padding: 10px 20px; }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="logo">
+            <span>Trade</span>
+            <span>Group</span>
+            <span>7</span>
+        </div>
+        
+        <h1 class="error-code">404</h1>
+        <p class="error-message">Page not found. This endpoint does not exist.</p>
+        <a href="/" class="back-link">Return to main interface</a>
+    </div>
+</body>
+</html>

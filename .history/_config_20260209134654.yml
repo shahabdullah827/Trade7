@@ -1,0 +1,11 @@
+﻿title: "Trade Group 7"
+email: "contact@tradegroup7.com"
+description: "Proprietary algorithmic trading software for alternative assets"
+baseurl: ""
+url: ""
+sass:
+  sass_dir: assets/css
+  style: compressed
+exclude:
+  - Gemfile
+  - Gemfile.lock

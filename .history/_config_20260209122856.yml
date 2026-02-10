@@ -1,0 +1,22 @@
+@'
+title: "Trade Group 7"
+email: "contact@tradegroup7.com"
+description: "Proprietary algorithmic trading software for alternative assets"
+baseurl: ""
+url: "" # leave empty for localhost
+
+# Build settings
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+'@ | Out-File -FilePath .\_config.yml -Encoding UTF8

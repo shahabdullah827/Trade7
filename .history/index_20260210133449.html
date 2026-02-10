@@ -1,0 +1,82 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Trade Group 7 develops proprietary software for the algorithmic trading of alternative assets">
+    <title>Trade Group 7</title>
+    
+    <!-- EB Garamond Font - EXACT Figma font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    
+    <!-- Optional: Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 font-family=%22EB+Garamond%22>7</text></svg>">
+    
+    <style>
+        /* Prevent layout shift while font loads */
+        body {
+            font-family: 'EB Garamond', serif;
+            font-display: swap; /* Better font loading */
+        }
+        
+        /* Ensure full height */
+        html, body {
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header class="header" role="banner">
+            <h1 class="logo">Trade Group 7</h1>
+        </header>
+        
+        <!-- Main Content -->
+        <main class="content" role="main">
+            <!-- Description Section -->
+            <section class="description-section" aria-label="Company Description">
+                <p class="description">
+                    Trade Group 7 develops proprietary software for the algorithmic trading of alternative assets.
+                </p>
+            </section>
+            
+            <!-- Contact Section -->
+            <section class="contact-section" aria-label="Contact Information">
+                <h2 class="contact-title">Contact</h2>
+                <p class="contact-note">
+                    For operational correspondence — we do not routinely respond to requests for media interviews or public commentary.
+                </p>
+                <div class="email-container">
+                    <a href="mailto:contact@tradegroup7.com" class="email-link">
+                        contact@tradegroup7.com
+                    </a>
+                </div>
+            </section>
+        </main>
+        
+        <!-- Footer -->
+        <footer class="footer" role="contentinfo">
+            <p class="copyright">
+                © Trade Group 7, <span id="current-year">2026</span>. All rights reserved.
+            </p>
+        </footer>
+    </div>
+    
+    <!-- Optional: Dynamic year update -->
+    <script>
+        // Update copyright year automatically
+        document.getElementById('current-year').textContent = new Date().getFullYear();
+        
+        // Prevent broken CSS if page loads slowly
+        document.addEventListener('DOMContentLoaded', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+</body>
+</html>
